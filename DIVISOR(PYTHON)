@@ -1,0 +1,19 @@
+divisor = []
+
+num1 = int(input('입력하신 값의 약수를 구합니다.>'))
+
+num2 = int(input('몇번째 값을 구할지 입력해주세요.>'))
+
+div = 1 # 나누는 값
+index = 0 #배열의 위치
+for kk in range(1,num1+1):
+    if num1 % kk == 0:
+        divisor.append(kk)
+        index += 1
+    
+if index < num2:
+    print('입력하신값의 약수가 없습니다.')
+
+else : 
+    print(divisor[num2-1])
+        
